@@ -114,21 +114,6 @@ body {
     right: 10px;
 }
 
-.landing-bar {
-    height: 80px;
-    padding: unset !important;
-}
-
-.landing-bar-link {
-    text-align: center;
-    background-color: #3D9C9F;
-    color: #fff;
-    padding: 15px;
-    border-radius: 4px;
-    margin-top: 15px;
-}
-
-
 .landing-section {
     position: relative;
     background-color: #fff;
@@ -137,6 +122,18 @@ body {
     box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.14);
     margin-bottom: 30px;
     padding: 25px;
+}
+
+.landing-bar {
+    padding: 20px 5px 20px 5px;
+}
+
+.landing-bar-link {
+    text-align: center;
+    background-color: #3D9C9F;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
 }
 
 .landing-title-container {
