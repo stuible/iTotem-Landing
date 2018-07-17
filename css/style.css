@@ -19,7 +19,8 @@ body {
 }
 .landing-menu a{
     color: #fff;
-    padding: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 25px;
+    font-size: 15px;
 }
 
 .hero-carousel {
@@ -28,10 +29,59 @@ body {
     overflow: hidden;
 }
 
+.hero-carousel .slick-slide{
+    position: relative;
+}
+
 .hero-carousel img{
     width: 100%;
     max-height: auto;
     opacity: 0.57;
+}
+
+.hero-content-wrapper{
+    position: relative;
+}
+.hero-content {
+    position: absolute;
+    top: 125px;
+    margin-left: 100px;
+    color: #fff;
+    width: 80%;
+}
+
+.hero-title {
+    font-size: 72px;
+}
+
+.hero-description {
+    font-size: 36px;
+}
+
+.hero-dots {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    margin-bottom: -20px;
+}
+
+.hero-dots li {
+    /* text-indent: -9999px;
+    overflow:hidden; */
+    display: inline-block;
+    background-color: #ffffff6c;
+    height: 15px;
+    width: 15px;
+    top: -70px;
+    z-index: 10;
+    position: relative;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.hero-dots li.slick-active {
+    background-color: #ffffff;
 }
 
 .slick-prev, .slick-next { 
