@@ -10,15 +10,16 @@ body {
     position: absolute;
     z-index: 2;
     width: 100%;
-    padding: 25px;
+    padding: 40px;
 }
 
 .landing-menu {
     float: right;
-    margin-top: 5px;
+    margin-top: 13px;
 }
 .landing-menu a{
     color: #fff;
+    padding: 0px 0px 0px 10px;
 }
 
 .hero-carousel {
@@ -62,7 +63,7 @@ body {
 }
 
 
-.hero-section {
+.landing-section {
     position: relative;
     background-color: #fff;
     top: -40px;
@@ -72,20 +73,20 @@ body {
     padding: 25px;
 }
 
-.hero-title-container {
+.landing-title-container {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
 }
 
-.hero-title-line {
+.landing-title-line {
     border-bottom: #E5E5E5 solid 2px;
     width: 50px;
     display: inline-block;
     margin-bottom: 7px;
 }
 
-.hero-title {
+.landing-title {
     text-align: center;
     display: inline-block;
     font-size: 30px;
@@ -93,7 +94,7 @@ body {
     margin: 0 5px 0 5px;
 }
 
-.hero-subtitle {
+.landing-subtitle {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -123,4 +124,37 @@ body {
 .service-description {
     margin-top: 10px;
     font-size: 14px;
+}
+
+.landing-sm-title {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.landing-sm-line {
+    margin-top: 7px;
+    border-top: 1px solid #979797;
+    max-width: 50px;
+}
+
+.landing-clients {
+    padding: 10px 50px 10px 50px;
+}
+
+.landing-clients img{
+    height: 50px;
+    width: auto;
+    margin: 0px 10px 0px 10px;
+}
+
+.client-arrow:before, .client-arrow:before {
+    color: rgb(0, 0, 0);
+}
+
+.client-arrow.next{
+    top: 10px;
+}
+
+.client-arrow.prev{
+    top: 10px;
 }
