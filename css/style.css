@@ -44,18 +44,29 @@ body {
 }
 .hero-content {
     position: absolute;
-    top: 125px;
+    top: 25%;
     margin-left: 100px;
     color: #fff;
-    width: 80%;
+    width: 70%;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 500ms;
+}
+
+.slick-active .hero-content {
+    opacity: 1;
 }
 
 .hero-title {
-    font-size: 72px;
+    font-size: 65px;
+    font-weight: 700;
 }
 
 .hero-description {
-    font-size: 36px;
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .hero-dots {
@@ -110,6 +121,11 @@ body {
 
 .landing-bar-link {
     text-align: center;
+    background-color: #3D9C9F;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
 }
 
 
