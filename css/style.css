@@ -1,0 +1,70 @@
+/* LANDING PAGE */
+
+body {
+    background-color: #F6F6F6;
+}
+
+.landing-nav {
+    /* height: 50px; */
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 25px;
+}
+
+.landing-menu {
+    float: right;
+    margin-top: 5px;
+}
+.landing-menu a{
+    color: #fff;
+}
+
+.hero-carousel {
+    background-color: #000000;
+    max-height: 900px;
+    overflow: hidden;
+}
+
+.hero-carousel img{
+    width: 100%;
+    max-height: auto;
+    opacity: 0.57;
+}
+
+.slick-prev, .slick-next { 
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: "Glyphicons Halflings", "slick", sans-serif;
+    font-size: 40px;
+    color: #fff;
+}
+.slick-prev:before { content: "\e257"; }
+.slick-next:before { content: "\e258"; }
+.slick-prev {
+    left: 10px;
+}
+.slick-next {
+    right: 10px;
+}
+
+.landing-bar {
+    height: 80px;
+}
+
+.landing-bar-link {
+    text-align: center;
+}
+
+
+.hero-section {
+    position: relative;
+    background-color: #fff;
+    top: -40px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.14);
+    margin-bottom: 30px;
+}
