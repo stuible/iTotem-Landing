@@ -72,8 +72,10 @@ body {
 }
 .landing-menu a{
     color: #fff;
-    margin: 0px 0px 0px 25px;
     font-size: 15px;
+}
+.landing-menu a:last-child{
+    margin: 0px 0px 0px 25px;
 }
 .landing-menu div{
     display: inline-block;
@@ -96,6 +98,10 @@ body {
     width: 100%;
     max-height: auto;
     opacity: 0.57;
+}
+
+.hero-carousel .slick-arrow{
+    display: none;
 }
 
 .hero-content-wrapper{
@@ -121,6 +127,9 @@ body {
     }
     .landing-nav {
         padding: 40px;
+    }
+    .hero-carousel .slick-arrow{
+        display: block;
     }
 }
 
@@ -331,10 +340,72 @@ body {
 }
 
 
+/* SUPPAGE */
+.hero-subpage {
+    max-height: 300px;
+    overflow: hidden;
+    background-color: #000000;
+    position: relative;
+}
+.hero-subpage img {
+    opacity: 0.6;
+}
+
+.subpage-description{
+    text-align: center;
+    font-size: 1.4em;
+    padding: 2em;
+}
+
+.hero-subpage-content {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+}
+
+.subpage-title {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.subpage-subtitle {
+    font-size: 1.15em;
+}
+
+.subpage-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.14);
+    margin-bottom: 30px;
+    /* padding: 25px; */
+}
+
+.subpage-card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-content {
+    text-align: center;
+    padding: 15px 0px 15px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+
 
 /* HELPER MEDIA QUERRIES */
 @media (max-width: 480px) {
     .hidden-tn {
         display: none;
+    }
+    .hero-content {
+        margin-left: 3em;
+        width: 90%;
     }
 }
