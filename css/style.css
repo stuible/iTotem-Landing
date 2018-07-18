@@ -373,6 +373,7 @@ body {
 
 .subpage-subtitle {
     font-size: 1.15em;
+    text-transform: uppercase;
 }
 
 .subpage-card {
