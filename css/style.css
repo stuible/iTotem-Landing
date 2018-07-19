@@ -56,6 +56,7 @@
 body {
     background-color: #F6F6F6;
     font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
 }
 
 .landing-nav {
@@ -128,6 +129,9 @@ body {
 
 /* Tiny devices (phones, 480px and up) */
 @media (min-width: 480px) {
+    body {
+        font-size: 14px;
+    }
     .hero-content { 
         font-size: 10px;
     }
@@ -240,6 +244,7 @@ body {
     box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.14);
     margin-bottom: 30px;
     padding: 25px;
+    font-size: 14px;
 }
 
 .landing-bar {
@@ -255,6 +260,7 @@ body {
     padding: 15px;
     border-radius: 4px;
     transition: all 0.3s ease 0s;
+    font-size: 14px;
 }
 .landing-bar-link:hover{
     box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.57);
@@ -323,6 +329,7 @@ body {
     text-transform: uppercase;
     display: inline-block;
     color: #242424;
+    font-size: 15px;
 }
 
 .landing-sm-line {
@@ -474,6 +481,9 @@ body {
 /* HELPER CLASSES */
 .spacer{
     height: 15px;
+}
+.spacer-sm{
+    /* height: 5px; */
 }
 
 /* HELPER MEDIA QUERRIES */
