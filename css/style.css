@@ -344,7 +344,7 @@ body {
 }
 
 .client-arrow:before, .client-arrow:before {
-    color: rgb(0, 0, 0);
+    color: #dbdbdb;
 }
 
 .client-arrow.next{
