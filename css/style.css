@@ -231,11 +231,13 @@ body {
 
 .landing-bar {
     padding: 20px 5px 20px 5px;
+    background-color: #3D9C9F;
 }
 
 .landing-bar-link {
     text-align: center;
-    background-color: #3D9C9F;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid #fff;
     color: #fff;
     padding: 15px;
     border-radius: 4px;
