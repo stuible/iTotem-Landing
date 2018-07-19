@@ -5,7 +5,8 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 5000,
         dots: true,
-        dotsClass: 'hero-dots hidden-tn',
+        appendDots: $('.dots-container'),
+        dotsClass: 'hero-dots',
         customPaging : function(slider, i) {
             return '<a href="#" data-slick-index="' + i + '></a>';
         },
