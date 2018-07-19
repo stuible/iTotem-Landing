@@ -5,12 +5,12 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 5000,
         dots: true,
-        dotsClass: 'hero-dots',
+        dotsClass: 'hero-dots hidden-tn',
         customPaging : function(slider, i) {
             return '<a href="#" data-slick-index="' + i + '></a>';
         },
-        prevArrow:"<div class='a-left control-c prev slick-prev' ></div>",
-        nextArrow:"<div class='a-right control-c next slick-next' ></div>"
+        prevArrow:"<div class='a-left control-c prev slick-prev hidden-tn' ></div>",
+        nextArrow:"<div class='a-right control-c next slick-next hidden-tn' ></div>"
     });
 
     $('.landing-clients').slick({

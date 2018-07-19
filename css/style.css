@@ -66,13 +66,19 @@ body {
     padding: 20px;
 }
 
+.landing-nav img{
+    height: 30px;
+}
+
 .landing-menu {
     float: right;
-    margin-top: 13px;
+    /* display: inline-block; */
+    margin-top: 5px;
 }
 .landing-menu a{
     color: #fff;
     font-size: 15px;
+    display: inline-block;
 }
 .landing-menu a:last-child{
     margin: 0px 0px 0px 25px;
@@ -131,6 +137,12 @@ body {
     .hero-carousel .slick-arrow{
         display: block;
     }
+    .landing-nav img{
+        height: auto;
+    }
+    .landing-menu {
+        margin-top: 13px;
+    }
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -176,7 +188,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: max-content;
+    position: relative;
+    top: -8em;
     margin-bottom: -20px;
+    padding: 0;
 }
 
 .hero-dots li {
@@ -186,9 +201,7 @@ body {
     background-color: #ffffff6c;
     height: 15px;
     width: 15px;
-    top: -70px;
     z-index: 10;
-    position: relative;
     margin-right: 5px;
     margin-left: 5px;
     border-radius: 50%;
@@ -309,6 +322,7 @@ body {
 .landing-sm-title {
     text-transform: uppercase;
     display: inline-block;
+    color: #242424;
 }
 
 .landing-sm-line {
@@ -318,7 +332,7 @@ body {
 }
 
 .landing-clients {
-    padding: 10px 50px 10px 50px;
+    padding-top: 25px;
 }
 
 .landing-clients img{
@@ -339,6 +353,23 @@ body {
 
 .client-arrow.prev{
     top: 10px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .landing-clients {
+        padding: 10px 50px 10px 50px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
 
 
@@ -374,8 +405,10 @@ body {
 }
 
 .subpage-subtitle {
-    font-size: 1.15em;
+    font-size: 1em;
     text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .subpage-card {
@@ -421,15 +454,67 @@ body {
     font-size: 1.25em;
 }
 
+/* COMPLIANCE */
 
+.compliance>.landing-sm-title {
+    margin-bottom: 25px;
+}
+
+.scroll-image {
+    width: 100%;
+    overflow: scroll;
+}
+
+.compliance img {
+    width: 100%;
+    min-width: 900px;
+    height: auto;
+}
+
+/* HELPER CLASSES */
+.spacer{
+    height: 15px;
+}
 
 /* HELPER MEDIA QUERRIES */
 @media (max-width: 480px) {
     .hidden-tn {
-        display: none;
+        display: none !important;
     }
     .hero-content {
         margin-left: 3em;
         width: 90%;
     }
 }
+
+/* CUSTOM CONTAINER MAX WIDTHS */
+
+@media (min-width: 576px) {
+    /* change this, by default 540px */
+     .container {
+       max-width: 530px;
+    }
+  }
+
+  
+  @media (min-width: 768px) {
+    /* change this, by default 720px */
+    .container {
+    max-width: 710px;
+    }
+  }
+
+  
+  @media (min-width: 992px) {
+    /* change this, by default 960px */
+    .container {
+      max-width: 950px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* change this, by default 1140px */
+    .container {
+      max-width: 970px;
+    }
+  }
