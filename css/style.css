@@ -127,6 +127,11 @@ body {
     transition-delay: 500ms;
 }
 
+.combined-logo{
+    width: 20em;
+    margin: 0 auto;
+}
+
 /* Tiny devices (phones, 480px and up) */
 @media (min-width: 480px) {
     body {
