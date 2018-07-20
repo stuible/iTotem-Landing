@@ -328,6 +328,7 @@ body {
 .service-description {
     margin-top: 10px;
     font-size: 14px;
+    padding: 0 30px;
 }
 
 .landing-sm-title {
@@ -371,6 +372,9 @@ body {
 @media (min-width: 768px) {
     .landing-clients {
         padding: 10px 50px 10px 50px;
+    }
+    .service-description{
+        padding: none;
     }
 }
 
