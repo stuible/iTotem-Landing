@@ -374,7 +374,7 @@ body {
         padding: 10px 50px 10px 50px;
     }
     .service-description{
-        padding: none;
+        padding: unset;
     }
 }
 
