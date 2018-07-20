@@ -53,6 +53,7 @@
 
 /* LANDING PAGE */
 
+
 body {
     background-color: #F6F6F6;
     font-family: 'Open Sans', sans-serif;
@@ -156,6 +157,7 @@ body {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    
     .hero-content { 
         font-size: 13px;
     }
@@ -286,7 +288,7 @@ body {
 .landing-title-line {
     border-bottom: #E5E5E5 solid 2px;
     width: 50px;
-    display: inline-block;
+    display: inline-block !important;
     margin-bottom: 7px;
 }
 
@@ -522,6 +524,11 @@ body {
     margin-right: auto;
     display: block;
     border-radius: 50%;
+}
+
+/* INDUSTRIES SERVED */
+.industr img{
+
 }
 
 /* HELPER CLASSES */
