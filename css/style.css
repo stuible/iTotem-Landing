@@ -370,18 +370,6 @@ body {
     top: 10px;
 }
 
-@media (max-width: 768px) {
-
-    .hero-title {
-        font-size: 4em;
-    }
-    
-    .hero-description {
-        margin-top: 0.7em;
-        font-size: 2em;
-    }
-}
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .landing-clients {
