@@ -409,6 +409,8 @@ body {
 }
 .hero-subpage img {
     opacity: 0.6;
+    width: 100%;
+    min-height: 250px;
 }
 
 .subpage-description{
@@ -449,6 +451,23 @@ body {
 .subpage-card img {
     width: 100%;
     border-radius: 5px 5px 0 0;
+}
+
+.container.subpage-button{
+    text-align: center;
+    padding: 40px 0px 100px 0px;
+}
+
+a.subpage-back {
+    background-color: #3D9C9F;
+    padding: 15px 50px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+a.subpage-back:hover{
+    text-decoration: none;
 }
 
 .card-content {
