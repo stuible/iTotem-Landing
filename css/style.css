@@ -530,6 +530,26 @@ a.subpage-back:hover{
     height: auto;
 }
 
+.compliance-row{
+    margin-top: 35px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+img.compliance-step{
+    /* display: inline-block; */
+    width: auto;
+    height: 250px;
+    min-width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+img.compliance-step.eight{
+    /* width: 5.5%; */
+}
+
 /* OUR STORY */
 
 .resources {
