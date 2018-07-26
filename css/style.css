@@ -254,6 +254,16 @@ body {
     font-size: 14px;
 }
 
+.subpage-section {
+    background-color: #fff;
+    top: -40px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.14);
+    margin-bottom: 30px;
+    padding: 25px;
+    font-size: 14px;
+}
+
 .landing-bar {
     padding: 20px 5px 20px 5px;
     background-color: #3D9C9F;
