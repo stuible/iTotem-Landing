@@ -414,13 +414,24 @@ body {
 .hero-subpage {
     max-height: 300px;
     overflow: hidden;
-    background-color: #000000;
     position: relative;
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
 }
 .hero-subpage img {
     opacity: 0.4;
     width: 100%;
     min-height: 250px;
+}
+.hero-overlay{
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
 }
 
 .subpage-description{
