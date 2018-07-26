@@ -573,8 +573,24 @@ img.compliance-step.eight{
 }
 
 .team-member {
-    width: 19%;
-    display: inline-block;
+    width: 100%;
+    display: block;
+    height: 100%;
+    max-width: 175px;
+    margin: 0 auto;
+}
+
+.team-member .name{
+    font-weight: 700;
+    border: 1px #b1b1b1 solid;
+    border-radius: 4px;
+    padding: 10px 0;
+}
+
+.team-member .title {
+    font-size: 0.9em;
+    color: #242424;
+    margin-top: 10px;
 }
 
 .team-member img {
@@ -620,6 +636,10 @@ img.compliance-step.eight{
     /* change this, by default 540px */
      .container {
        max-width: 530px;
+    }
+    .team-member {
+        width: 19%;
+        display: inline-block;
     }
   }
 
