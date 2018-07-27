@@ -643,6 +643,33 @@ img.compliance-step.eight{
     border-radius: 50%;
 }
 
+.story-logo{
+    max-width: 150px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.story-logo-wraper {
+    width: 100%;
+    display: inline-block;
+    padding: 0 10px;
+}
+.story-logo-wraper:first-child {
+    margin-left: 0;
+}
+
+/* Tiny devices (phones, 480px and up) */
+@media (min-width: 768px) {
+    .story-logo-wraper {
+        width: 20%;
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .story-logo-wraper:first-child {
+        margin-left: 20%;
+    }
+}
+
 /* INDUSTRIES SERVED */
 .industr img{
 
