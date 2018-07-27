@@ -614,17 +614,27 @@ img.compliance-step.eight{
 
 .team-member {
     width: 100%;
-    display: block;
-    height: 100%;
+    height: 100px;
+    display: inline-block;
     max-width: 175px;
-    margin: 0 auto;
+    min-width: 120px;
+    /* border: 1px #b1b1b1 solid; */
+    border-radius: 4px;
+    padding: 10px 0;
+}
+
+.team-line{
+    display: inline-block;
+    width: 1px;
+    height: 40px;
+    background-color: #e5e5e5;
 }
 
 .team-member .name{
     font-weight: 700;
-    border: 1px #b1b1b1 solid;
-    border-radius: 4px;
-    padding: 10px 0;
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap; */
 }
 
 .team-member .title {
@@ -705,7 +715,7 @@ img.compliance-step.eight{
        max-width: 530px;
     }
     .team-member {
-        width: 19%;
+        width: calc(19% - 2px);
         display: inline-block;
     }
   }
