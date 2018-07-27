@@ -590,7 +590,7 @@ img.compliance-step.eight{
 
 .team {
     text-align: center;
-    top: 0;
+    /* top: 0; */
 }
 
 .team-member {
