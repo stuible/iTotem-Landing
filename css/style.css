@@ -581,6 +581,15 @@ img.compliance-step.eight{
     /* width: 5.5%; */
 }
 
+.compliance-description {
+    background-color: #33C590;;
+    color: #fff;
+    /* margin-bottom: 35px; */
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 25px
+}
+
 /* OUR STORY */
 
 .resources {
