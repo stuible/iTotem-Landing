@@ -102,6 +102,7 @@ body {
 .hero-carousel .slick-slide, .subpage-hero-carousel .slick-slide{
     position: relative;
     outline: none;
+    max-height: 900px;
 }
 
 .hero-carousel img, .subpage-hero-carousel img{
@@ -626,6 +627,10 @@ img.compliance-step.eight{
 .story-hero-title {
     font-size: 3em;
     font-weight: 700;
+}
+
+.story-hero-description {
+    font-size: 2em;
 }
 
 .resources {
