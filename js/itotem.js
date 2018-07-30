@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.hero-carousel').slick({
         slidesToShow: 1,
         arrows: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 7000,
         dots: true,
         appendDots: $('.dots-container'),
