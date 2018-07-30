@@ -135,7 +135,7 @@ body {
     z-index: 1;
     font-size: 8px;
     position: absolute;
-    top: 9em;
+    bottom: 9em;
     margin-left: 7em;
     color: #fff;
     width: 70%;
@@ -621,6 +621,11 @@ img.compliance-step.eight{
 }
 
 /* OUR STORY */
+
+.story-hero-title {
+    font-size: 3em;
+    font-weight: 700;
+}
 
 .resources {
     text-align: center;
