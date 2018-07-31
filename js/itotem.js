@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.hero-carousel').slick({
         slidesToShow: 1,
         arrows: true,
@@ -7,15 +7,15 @@ $(document).ready(function(){
         dots: true,
         appendDots: $('.dots-container'),
         dotsClass: 'hero-dots',
-        customPaging : function(slider, i) {
+        customPaging: function (slider, i) {
             return '<a href="#" data-slick-index="' + i + '></a>';
         },
-        prevArrow:"<div class='a-left control-c prev slick-prev hidden-tn' ></div>",
-        nextArrow:"<div class='a-right control-c next slick-next hidden-tn' ></div>"
+        prevArrow: "<div class='a-left control-c prev slick-prev hidden-tn' ></div>",
+        nextArrow: "<div class='a-right control-c next slick-next hidden-tn' ></div>"
     });
 
     // On before slide change
-    $('.hero-carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    $('.hero-carousel').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         console.log(nextSlide);
         switch (nextSlide) {
             case 0:
@@ -31,7 +31,7 @@ $(document).ready(function(){
             case 4:
                 changeHeroText('Compliance & Trust', 'We seamlessly integrate supplier development, compliance reporting and story-telling to build project certainty and win public trust');
                 break;
-        
+
             default:
                 changeHeroText('', '');
                 break;
@@ -42,8 +42,8 @@ $(document).ready(function(){
         variableWidth: true,
         slidesToShow: 5,
         swipeToSlide: true,
-        prevArrow:"<div class='a-left control-c prev slick-prev client-arrow prev' ></div>",
-        nextArrow:"<div class='a-right control-c next slick-next client-arrow next' ></div>"
+        prevArrow: "<div class='a-left control-c prev slick-prev client-arrow prev' ></div>",
+        nextArrow: "<div class='a-right control-c next slick-next client-arrow next' ></div>"
     });
 
     $('.subpage-hero-carousel').slick({
@@ -54,44 +54,45 @@ $(document).ready(function(){
         dots: true,
         appendDots: $('.dots-container'),
         dotsClass: 'hero-dots',
-        customPaging : function(slider, i) {
+        customPaging: function (slider, i) {
             return '<a href="#" data-slick-index="' + i + '></a>';
         },
-        prevArrow:"<div class='a-left control-c prev slick-prev hidden-tn' ></div>",
-        nextArrow:"<div class='a-right control-c next slick-next hidden-tn' ></div>"
+        prevArrow: "<div class='a-left control-c prev slick-prev hidden-tn' ></div>",
+        nextArrow: "<div class='a-right control-c next slick-next hidden-tn' ></div>"
     });
-    
-  });
 
-  function changeHeroText(title, description){
+});
+
+function changeHeroText(title, description) {
+
+    // console.log('current title: ' + $(".hero-title").text());
+    // console.log('new title: ' + title);
+
+    if ($(".hero-title").text() != title) {
+        // console.log('different words, changing title');
+
+        $(".hero-title").animate({
+            opacity: 0, // animate slideUp
+            marginLeft: '-100px'
+        }, 'fast', 'swing', function () {
+            $(this).text(title).css({ marginLeft: '100px' }).animate({
+                opacity: 1, // animate slideUp
+                marginLeft: '0px'
+            }, 'fast', 'swing');
+        });
+
+    }
+    // else console.log('same words, not changing title');
+
+    if ($(".hero-description").text() != description) {
+        // console.log('different words, changing description');
+
+        $(".hero-description").fadeOut('fast', function () {
+            $(this).text(description).fadeIn('fast');
+        });
+
+    }
+    // else console.log('same words, not changing desciption');
 
 
-    // $.when($('.hero-content').fadeTo(300, 0))
-    // .done(function() {
-    //     $('.hero-title').text(title);
-    //     $('.hero-description').text(description);
-    //     $('.hero-content').fadeTo(300, 1);
-    // });
-
-
-    //   $('.hero-content').fadeOut(300);
-
-    //   })
-        // $('.hero-title').text(title);
-        // $('.hero-description').text(description);
-        // $(this).fadeIn(300);
-
-// $('.hero-content').fadeTo(300, 0, function() {
-
-    $('.hero-title').text(title);
-    $('.hero-description').text(description);
-    // $('.hero-content').delay( 300 ).fadeTo(300, 1);
-
-// });
-
-// $('.hero-content').fadeTo(300, 0).promise().done(function() {
-//     alert('done');
-//     // $('.hero-content').fadeTo(300, 1);
-// });
-
-  }
+}
