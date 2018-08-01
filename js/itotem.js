@@ -19,16 +19,18 @@ $(document).ready(function () {
         console.log(nextSlide);
         switch (nextSlide) {
             case 0:
+            case 1:
                 changeHeroText('iTotem', 'Visible benefits, measurable progress');
                 break;
-            case 1:
             case 2:
+            case 3:
                 changeHeroText('Our Mission', 'To serve Indigenous and Local suppliers and empower their full participation in Canada’s economy by simplifying project compliance and showcasing their contributions');
                 break;
-            case 3:
+            case 4:
+            case 5:
                 changeHeroText('Visible Benefits', 'We make economic benefits visible at the project site, on the shop floor and in the community');
                 break;
-            case 4:
+            case 6:
                 changeHeroText('Compliance & Trust', 'We seamlessly integrate supplier development, compliance reporting and story-telling to build project certainty and win public trust');
                 break;
 
