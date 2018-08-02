@@ -267,6 +267,10 @@ body {
     width: max-content;
 }
 
+.hero-dots {
+    -webkit-padding-start: 0em;
+}
+
 .hero-dots li {
     /* text-indent: -9999px;
     overflow:hidden; */
